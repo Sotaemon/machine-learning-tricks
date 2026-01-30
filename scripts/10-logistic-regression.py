@@ -138,8 +138,8 @@ plt.xlim(-1.1, 1.1)
 plt.ylim(-1.1, 1.1)
 plt.xlabel('X1 axis')
 plt.ylabel('X2 axis')
-plt.savefig('output_16_1.png')
-plt.savefig('output_16_1.pdf')
+plt.savefig('./output/logistic/lr_dataset.png')
+plt.savefig('./output/logistic/lr_dataset.pdf')
 plt.show()
 
 from sklearn.linear_model import LogisticRegression
