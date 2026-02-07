@@ -8,11 +8,12 @@ dependencies = [
     "matplotlib>=3.10.8",
     "numpy>=2.4.1",
     "pandas>=3.0.0",
-    "scikit-image>=0.26.0",
+    "pillow>=12.1.0",
     "scikit-learn>=1.8.0",
-    "tqdm>=4.67.1",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
 ]
 
-[tool.uv]
-index-url = "https://pypi.mirrors.ustc.edu.cn/simple/"
-extra-index-url = ["https://pypi.org/simple/"]
+[[tool.uv.index]]
+url = "https://mirrors.ustc.edu.cn/pypi/simple"
+default = true
