@@ -9,9 +9,12 @@ dependencies = [
     "numpy>=2.4.1",
     "pandas>=3.0.0",
     "pillow>=12.1.0",
+    "pydotplus>=2.0.2",
     "scikit-learn>=1.8.0",
     "torch>=2.10.0",
     "torchvision>=0.25.0",
+    "tqdm>=4.67.3",
+    "xgboost>=3.2.0",
 ]
 
 [[tool.uv.index]]

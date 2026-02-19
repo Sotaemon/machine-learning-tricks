@@ -84,9 +84,7 @@ def main():
             print(f"训练轮数：{i}，平均损失：{ave_loss:.4f}")
             # 选取测试集中的部分图像重建并展示
             with torch.inference_mode():
-                features = torch.from_numpy(features_test[: 3 * 5]).to(
-                    torch.float32
-                )
+                features = torch.from_numpy(features_test[: 3 * 5]).to(torch.float32)
                 features_rec = decoder(encoder(features))
                 features_rec = features_rec.cpu().numpy()
             display(features_rec, 3, 5)
